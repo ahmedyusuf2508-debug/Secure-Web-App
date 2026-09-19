@@ -170,6 +170,42 @@ This project helped me understand how security can be built into a web applicati
 
 
 
+\## Project Screenshots
+
+
+
+\### Application Security Testing
+
+
+
+The screenshots below show examples of the application and security testing performed during the project.
+
+
+
+!\[Security Test](screenshots/Screenshot%202026-09-19%20121450.png)
+
+
+
+!\[Security Test](screenshots/Screenshot%202026-09-19%20123236.png)
+
+
+
+\### Security Scanning
+
+
+
+!\[Security Scan](screenshots/Screenshot%202026-09-19%20173137.png)
+
+
+
+!\[Dependency Scan](screenshots/Screenshot%202026-09-19%20174056.png)
+
+
+
+!\[GitHub Project](screenshots/Screenshot%202026-09-19%20174450.png)
+
+
+
 \## Author
 
 
