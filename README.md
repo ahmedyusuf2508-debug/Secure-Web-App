@@ -1,4 +1,4 @@
-\# Secure Flask Web Application
+# Secure Flask Web Application
 
 
 
@@ -10,43 +10,43 @@ The goal of this project was to build a working web application and apply securi
 
 
 
-\## Features
+## Features
 
 
 
-\- User registration
+- User registration
 
-\- User login
+- User login
 
-\- Password hashing
+- Password hashing
 
-\- Secure authentication
+- Secure authentication
 
-\- Protected dashboard
+- Protected dashboard
 
-\- User sessions
+- User sessions
 
-\- Logout functionality
+- Logout functionality
 
-\- CSRF protection
+- CSRF protection
 
-\- SQL injection protection
+- SQL injection protection
 
-\- XSS protection
+- XSS protection
 
-\- HTTP security headers
+- HTTP security headers
 
-\- Input validation
+- Input validation
 
-\- SQLite database
-
-
-
-\## Security Controls
+- SQLite database
 
 
 
-\### Password Hashing
+## Security Controls
+
+
+
+### Password Hashing
 
 
 
@@ -54,7 +54,7 @@ Passwords are not stored as plain text. The application uses Werkzeug password h
 
 
 
-\### SQL Injection Protection
+### SQL Injection Protection
 
 
 
@@ -62,7 +62,7 @@ The application uses parameterized SQL queries instead of placing user input dir
 
 
 
-\### CSRF Protection
+### CSRF Protection
 
 
 
@@ -70,7 +70,7 @@ Flask-WTF is used to protect forms against Cross-Site Request Forgery (CSRF) att
 
 
 
-\### XSS Protection
+### XSS Protection
 
 
 
@@ -86,7 +86,7 @@ The application displayed the script as text instead of running the JavaScript.
 
 
 
-\### Secure Sessions
+### Secure Sessions
 
 
 
@@ -94,7 +94,7 @@ Flask sessions are used to keep track of authenticated users. Protected pages ch
 
 
 
-\### Security Headers
+### Security Headers
 
 
 
@@ -102,21 +102,21 @@ The application uses HTTP security headers including:
 
 
 
-\- Content-Security-Policy
+- Content-Security-Policy
 
-\- X-Content-Type-Options
+- X-Content-Type-Options
 
-\- X-Frame-Options
+- X-Frame-Options
 
-\- Referrer-Policy
-
-
-
-\## Security Testing
+- Referrer-Policy
 
 
 
-\### Semgrep
+## Security Testing
+
+
+
+### Semgrep
 
 
 
@@ -128,11 +128,11 @@ The first scan detected Flask debug mode as a security issue. I disabled debug m
 
 
 
-\*\*Final result: 0 findings\*\*
+**Final result: 0 findings**
 
 
 
-\### pip-audit
+### pip-audit
 
 
 
@@ -140,37 +140,37 @@ I used pip-audit to check the Python dependencies for known vulnerabilities.
 
 
 
-\*\*Final result: No known vulnerabilities found\*\*
+**Final result: No known vulnerabilities found**
 
 
 
-\## Technologies Used
+## Technologies Used
 
 
 
-\- Python
+- Python
 
-\- Flask
+- Flask
 
-\- Flask-WTF
+- Flask-WTF
 
-\- SQLite
+- SQLite
 
-\- HTML
+- HTML
 
-\- Werkzeug
+- Werkzeug
 
-\- Git
+- Git
 
-\- GitHub
+- GitHub
 
-\- Semgrep
+- Semgrep
 
-\- pip-audit
+- pip-audit
 
 
 
-\## What I Learned
+## What I Learned
 
 
 
@@ -182,11 +182,11 @@ I practiced authentication, password hashing, session management, input validati
 
 
 
-\## Project Screenshots
+## Project Screenshots
 
 
 
-\### Application Security Testing
+### Application Security Testing
 
 
 
@@ -198,7 +198,7 @@ I practiced authentication, password hashing, session management, input validati
 
 
 
-\### Security Scanning
+### Security Scanning
 
 
 
@@ -214,13 +214,14 @@ I practiced authentication, password hashing, session management, input validati
 
 
 
-\## Author
+## Author
 
 
 
-\*\*Ahmed Yusuf\*\*
+**Ahmed Yusuf**
 
 
 
 Cybersecurity
+
 
