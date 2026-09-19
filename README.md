@@ -2,7 +2,11 @@
 
 
 
-This is a cybersecurity and application security project I built using Python and Flask. The goal of this project was to build a working web application and add security controls to protect user accounts and data.
+A cybersecurity and application security project I built using Python and Flask.
+
+
+
+The goal of this project was to build a working web application and apply security controls to protect user accounts, passwords, sessions, and data.
 
 
 
@@ -62,7 +66,11 @@ The application uses parameterized SQL queries instead of placing user input dir
 
 
 
-Flask-WTF is used to help protect forms against Cross-Site Request Forgery attacks.
+Flask-WTF is used to protect forms against Cross-Site Request Forgery (CSRF) attacks.
+
+
+
+I also tested the application by sending a request without a CSRF token. The application rejected the request because the CSRF token was missing.
 
 
 
@@ -70,7 +78,19 @@ Flask-WTF is used to help protect forms against Cross-Site Request Forgery attac
 
 
 
-User-controlled data is displayed through Jinja templates, which escape HTML by default. I tested the application using an XSS test string to verify that it was displayed as text instead of being executed as JavaScript.
+User-controlled data is displayed through Jinja templates, which escape HTML by default.
+
+
+
+I tested the application using an XSS test string:
+
+
+
+`<script>alert('XSS')</script>`
+
+
+
+The application displayed the script as text instead of executing the JavaScript.
 
 
 
@@ -86,7 +106,7 @@ Flask sessions are used to keep track of authenticated users. Protected pages ch
 
 
 
-The application adds HTTP security headers including:
+The application uses HTTP security headers including:
 
 
 
@@ -104,6 +124,10 @@ The application adds HTTP security headers including:
 
 
 
+\### Semgrep
+
+
+
 I used Semgrep to perform static application security testing on the Python code.
 
 
@@ -112,27 +136,27 @@ The first scan detected Flask debug mode as a security issue.
 
 
 
-I changed the application to disable debug mode and ran the scan again.
+I fixed the issue by disabling debug mode and ran the scan again.
 
 
 
-Final Semgrep result:
+\*\*Final result: 0 findings\*\*
 
 
 
-\*\*0 findings\*\*
+\### pip-audit
 
 
 
-I also used pip-audit to scan the Python dependencies for known vulnerabilities.
+I used pip-audit to scan the Python dependencies for known vulnerabilities.
 
 
 
-Final pip-audit result:
+The original scan identified vulnerable dependencies. I updated the affected package and ran the scan again.
 
 
 
-\*\*No known vulnerabilities found\*\*
+\*\*Final result: No known vulnerabilities found\*\*
 
 
 
@@ -166,7 +190,15 @@ Final pip-audit result:
 
 
 
-This project helped me understand how security can be built into a web application instead of being added only after development. I practiced secure authentication, password storage, session management, input validation, database security, CSRF protection, XSS protection, security headers, static code scanning, and dependency vulnerability scanning.
+This project helped me understand how security can be built into a web application instead of only being added after development.
+
+
+
+I practiced secure authentication, password storage, session management, input validation, database security, CSRF protection, XSS protection, security headers, static code scanning, and dependency vulnerability scanning.
+
+
+
+I also practiced using Git and GitHub to manage and document a security project.
 
 
 
@@ -182,11 +214,11 @@ The screenshots below show examples of the application and security testing perf
 
 
 
-!\[Security Test](screenshots/Screenshot%202026-09-19%20121450.png)
+!\[Application Security Test](screenshots/Screenshot%202026-09-19%20121450.png)
 
 
 
-!\[Security Test](screenshots/Screenshot%202026-09-19%20123236.png)
+!\[XSS Protection Test](screenshots/Screenshot%202026-09-19%20123236.png)
 
 
 
@@ -194,11 +226,11 @@ The screenshots below show examples of the application and security testing perf
 
 
 
-!\[Security Scan](screenshots/Screenshot%202026-09-19%20173137.png)
+!\[Semgrep Security Scan](screenshots/Screenshot%202026-09-19%20173137.png)
 
 
 
-!\[Dependency Scan](screenshots/Screenshot%202026-09-19%20174056.png)
+!\[Dependency Vulnerability Scan](screenshots/Screenshot%202026-09-19%20174056.png)
 
 
 
@@ -210,7 +242,7 @@ The screenshots below show examples of the application and security testing perf
 
 
 
-Ahmed Yusuf
+\*\*Ahmed Yusuf\*\*
 
 
 
