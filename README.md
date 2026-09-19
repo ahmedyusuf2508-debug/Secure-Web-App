@@ -70,19 +70,11 @@ Flask-WTF is used to protect forms against Cross-Site Request Forgery (CSRF) att
 
 
 
-I also tested the application by sending a request without a CSRF token. The application rejected the request because the CSRF token was missing.
-
-
-
 \### XSS Protection
 
 
 
-User-controlled data is displayed through Jinja templates, which escape HTML by default.
-
-
-
-I tested the application using an XSS test string:
+I tested the application using:
 
 
 
@@ -90,7 +82,7 @@ I tested the application using an XSS test string:
 
 
 
-The application displayed the script as text instead of executing the JavaScript.
+The application displayed the script as text instead of running the JavaScript.
 
 
 
@@ -128,15 +120,11 @@ The application uses HTTP security headers including:
 
 
 
-I used Semgrep to perform static application security testing on the Python code.
+I used Semgrep to scan the Python code for security problems.
 
 
 
-The first scan detected Flask debug mode as a security issue.
-
-
-
-I fixed the issue by disabling debug mode and ran the scan again.
+The first scan detected Flask debug mode as a security issue. I disabled debug mode and scanned the application again.
 
 
 
@@ -148,11 +136,7 @@ I fixed the issue by disabling debug mode and ran the scan again.
 
 
 
-I used pip-audit to scan the Python dependencies for known vulnerabilities.
-
-
-
-The original scan identified vulnerable dependencies. I updated the affected package and ran the scan again.
+I used pip-audit to check the Python dependencies for known vulnerabilities.
 
 
 
@@ -190,15 +174,11 @@ The original scan identified vulnerable dependencies. I updated the affected pac
 
 
 
-This project helped me understand how security can be built into a web application instead of only being added after development.
+This project helped me understand how security can be built into a web application.
 
 
 
-I practiced secure authentication, password storage, session management, input validation, database security, CSRF protection, XSS protection, security headers, static code scanning, and dependency vulnerability scanning.
-
-
-
-I also practiced using Git and GitHub to manage and document a security project.
+I practiced authentication, password hashing, session management, input validation, SQL injection protection, CSRF protection, XSS protection, security headers, static code scanning, and dependency vulnerability scanning.
 
 
 
@@ -207,10 +187,6 @@ I also practiced using Git and GitHub to manage and document a security project.
 
 
 \### Application Security Testing
-
-
-
-The screenshots below show examples of the application and security testing performed during the project.
 
 
 
