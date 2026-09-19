@@ -190,11 +190,11 @@ I practiced authentication, password hashing, session management, input validati
 
 
 
-!\[Application Security Test](screenshots/Screenshot%202026-09-19%20121450.png)
+![Application Security Test](screenshots/Screenshot%202026-09-19%20121450.png)
 
 
 
-!\[XSS Protection Test](screenshots/Screenshot%202026-09-19%20123236.png)
+![XSS Protection Test](screenshots/Screenshot%202026-09-19%20123236.png)
 
 
 
@@ -202,15 +202,15 @@ I practiced authentication, password hashing, session management, input validati
 
 
 
-!\[Semgrep Security Scan](screenshots/Screenshot%202026-09-19%20173137.png)
+![Semgrep Security Scan](screenshots/Screenshot%202026-09-19%20173137.png)
 
 
 
-!\[Dependency Vulnerability Scan](screenshots/Screenshot%202026-09-19%20174056.png)
+![Dependency Vulnerability Scan](screenshots/Screenshot%202026-09-19%20174056.png)
 
 
 
-!\[GitHub Project](screenshots/Screenshot%202026-09-19%20174450.png)
+![GitHub Project](screenshots/Screenshot%202026-09-19%20174450.png)
 
 
 
@@ -223,5 +223,8 @@ I practiced authentication, password hashing, session management, input validati
 
 
 Cybersecurity
+
+
+
 
 
